@@ -5,3 +5,5 @@ git push origin nomeBranch
 git checkout "main" //Retorna a main
 git merge "nome-branc" //Implementa uma branch na main (deve estar aberto na main)
 git clone "https" //Puxa do github pelo git um arquivo
+cd <file> //Entra em um arquivo
+git pull //Traz modificações que possam ser feitas no repositório
