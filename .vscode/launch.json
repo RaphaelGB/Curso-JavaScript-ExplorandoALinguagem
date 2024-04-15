@@ -1,0 +1,32 @@
+
+{   //Fica dentro do .vscode que é uma pasta criada externa dos arquivos
+
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [ //Programa de configuração
+        {
+            "type": "node", //Tipo de debug
+            "request": "launch", //tipo de requisição de debug
+            "name": "8-loops", //nome que pode ser mudado
+            "skipFiles": [
+                "<node_internals>/**" //Tudo que for interno é pulado
+            ],
+            "program": "${workspaceFolder}\\8-loops.js"//Mostra a pasta que se quer executar
+         }, //A vírgula serve para adicionar mais um arquivo
+         {
+
+            //Esse arquivo pode ser configurado e aparece automaticamente no debug
+            "type": "node", 
+            "request": "launch", 
+            "name": "7-condicionais", 
+            "skipFiles": [
+                "<node_internals>/**" //Tudo que for interno é pulado
+            ],
+            "program": "${workspaceFolder}\\7-condicionais.js"//Mostra a pasta que se quer executar
+        //Ele somente entra em debug, se existir o breakpoint no arquivo, se não executa direto 
+        
+        }
+    ]
+}
